@@ -63,6 +63,8 @@ namespace UkrPochtaParser
             countries.ParseSourceStringToList(source.GetInnerText());
 
             listBox1.DataSource = countries.ListBoxContent;
+
+            button2.Enabled = false;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
